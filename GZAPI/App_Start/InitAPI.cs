@@ -21,6 +21,7 @@ namespace GZAPI
             config.Formatters.Remove(config.Formatters.XmlFormatter);
 
 
+
             // 解决json序列化时的循环引用问题
             config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             // 对 JSON 数据使用混合大小写。驼峰式,但是是javascript 首字母小写形式.
