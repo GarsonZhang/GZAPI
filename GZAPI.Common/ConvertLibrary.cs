@@ -11,6 +11,9 @@ namespace GZAPI.Common
 {
     public class ConvertLibrary
     {
+
+
+
         public static IEnumerable<T> Convert2Object<T>(DataTable dt, bool IgnoreCase) where T : new()
         {
             Type type = typeof(T);
@@ -92,6 +95,22 @@ namespace GZAPI.Common
                 SetObjectValue(type, t, key, dic[key], IgnoreCase);
             }
             return t;
+        }
+
+
+        public static T Convert2Object<T>(Dictionary<string, object> dic)
+        {
+
+            List<Newtonsoft.Json.Linq.JProperty> dp = new List<Newtonsoft.Json.Linq.JProperty>();
+            foreach (string key in dic.Keys)
+            {
+                dp.Add(new Newtonsoft.Json.Linq.JProperty(key, dic[key]));
+            }
+
+            Newtonsoft.Json.Linq.JObject f = new Newtonsoft.Json.Linq.JObject(dp.ToArray());
+
+            return f.ToObject<T>();
+
         }
 
         /// <summary>

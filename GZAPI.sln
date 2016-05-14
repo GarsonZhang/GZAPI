@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZAPI.DataServices", "GZAPI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZAPI.Models", "GZAPI.Models\GZAPI.Models.csproj", "{FD9C6619-C2B3-4065-9D2B-28181207825B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZAPI.CommonTests", "GZAPI.CommonTests\GZAPI.CommonTests.csproj", "{77727E98-CA43-4F4E-8A1D-E51D516BD44E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FD9C6619-C2B3-4065-9D2B-28181207825B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD9C6619-C2B3-4065-9D2B-28181207825B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD9C6619-C2B3-4065-9D2B-28181207825B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77727E98-CA43-4F4E-8A1D-E51D516BD44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77727E98-CA43-4F4E-8A1D-E51D516BD44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77727E98-CA43-4F4E-8A1D-E51D516BD44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77727E98-CA43-4F4E-8A1D-E51D516BD44E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
